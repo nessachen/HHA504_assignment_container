@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f8fc; 
+            color: #4a4a4a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff; 
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #ff8b9e;
+            font-size: 2.5rem;
+        }
+
+        p {
+            color: #6f6f6f;
+            font-size: 1.2rem;
+        }
+
+        /* Button styling */
+        button {
+            background-color: #ffcccb; 
+            color: #4a4a4a; 
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff8b9e; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p>Click the button below</p>
+        <button onclick="sayHello()">Click Me!</button>
+        <p id="message" style="margin-top: 20px;"></p>
+    </div>
+
+    <script>
+        function sayHello() {
+            document.getElementById('message').textContent = 'Hello World ☺';
+        }
+    </script>
+</body>
+</html>
